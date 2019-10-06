@@ -12,8 +12,36 @@
 
 
 <body>
-    <!-- JAVASCRIPT  -->
+    <!-- JQUIRY  -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+
+        var characters, gameState
+
+        function startGame() {
+            characters = resetCharacters
+            gameState = resetgameState
+
+
+            renderCharacters()
+
+        }
+
+        //reset characters//
+
+        return {
+
+            'obiWanKenobi': {
+                name: 'Obi-Wan Kenobi',
+                health: 120,
+                attack: 8,
+                imageUrl: 'assets/images/',
+                enemyAttackBack: 15
+            }
+        }
+
+
+
+
     </script>
 
     <div class="main-section-title">Star Wars RPG!</div>
@@ -26,14 +54,11 @@
         <div id="character-area"></div>
     </div>
 
-    <!-- Section for our selected character. -->
     <div id="selected-character-section">
         <div class="section-title">Your Character</div>
-        <!-- Where our selected character will appear. -->
         <div id="selected-character"></div>
     </div>
 
-    <!-- Where our enemies available to attack will appear. -->
     <div id="available-to-attack-section">
         <div class="section-title">Enemies Available To Attack</div>
     </div>
@@ -46,13 +71,11 @@
     <div id="action">
         <div class="character-section">
             <div class="section-title">Defender</div>
-            <!-- Where our defender will appear. -->
             <div id="defender"></div>
         </div>
     </div>
 
     </div>
-    <!-- Area for game messages. -->
     <div id="game-message"></div>
     <button id="reset-button" style="display: none;">Reset Game</button>
 
